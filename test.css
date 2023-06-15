@@ -1,0 +1,116 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background: #E9E8E8;
+}
+section 
+{
+  display: flex;
+
+}
+section img
+{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .6;
+  transition: .5s ease;
+
+}
+section img:hover
+{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 2;
+  filter: contrast(120%);
+}
+header .logo
+{
+  position: relative;
+  max-width: 150px;
+  transition: 0.5s;
+}
+header .logo:hover
+{
+  transform: translateY(+15px);
+}
+header ul
+{
+  position: relative;
+  display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+
+    list-style: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+header ul li a:hover
+{
+  font-weight: 800;
+  color: #913175;
+}
+.content
+{
+  position: relative;
+  width: 100%;
+  display;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .TextBox
+{
+  position: relative;
+  max-width: 600px;
+}
+.content .TextBox h2
+{
+  color: #333;
+  font-size: 3.5em;
+  line-height: 1em;
+  font-weight: 400;
+}
+.content .TextBox h2 span
+{
+  color: #913175;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.content .TextBox p
+{
+  color: #333;
+}
+.content .TextBox a
+{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #913175;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.content .imgBox
+{
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+.content .imgBox img
+{
+  max-width: 340px;
+}

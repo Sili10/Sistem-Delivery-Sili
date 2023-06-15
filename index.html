@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INICIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="index.html"><img src="logoP2.png" class="logo" style="width: 130px;"></a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>   
+                    <li><a href="login.html">Registrate</a></li>
+                </ul>
+        </header>
+            <div class="content">
+                <div class="TextBox">
+                    <h2>Mucha Hambre?<br>Pide en &nbsp;<span>Panda FastFood</span></h2>
+                    <p>Disfruta de toda la comida a tu disposicion en tan solo unos clicks, esta nueva era esta
+                    hecha para gozar de la comida, que esperas pide lo que quieras.</p>
+                     <a href="vermas.html"> Ver Mas</a>
+                </div>
+        <div class="imgBox">
+            <img src="hm1.png" class="hamburguesa" style="width: 1500px">
+        </div>
+        </div>
+    <ul class="art">
+        <li><img src="art1.png" onclick="imgSlider('art1.png');changeCircleColor('#ed487b')"></li>
+        <li><img src="art2.png" onclick="imgSlider('art2.png');changeCircleColor('#cd7c8d')"></li>
+        <li><img src="art3.png" onclick="imgSlider('art3.png');changeCircleColor('#7d2017')"></li>
+    </ul>
+    <ul class="redes">
+        <li><a href="https://www.facebook.com/profile.php?id=100010785041558&mibextid=LQQJ4d"><img src="fb.png"></a></li>
+        <li><a href="https://www.instagram.com/trixzsili_/"><img src="ig.png"></a></li>
+        <li><a href="https://twitter.com/panda?s=21&t=KFrNNnYx9SrJbwy_mWpGCw"><img src="tw.png"></a></li>
+    </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.hamburguesa').src = anything; 
+        }
+
+        function changeCircleColor(color){
+            const circulo = document.querySelector('.circulo');
+            circulo.style.background = color;
+        }
+    </script>
+</body>
+</html>
